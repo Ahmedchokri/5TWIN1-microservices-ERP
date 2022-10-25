@@ -1,0 +1,24 @@
+.dis{
+    display: flex;
+    margin-left:100px;
+  
+}
+.textposition{
+      margin-left: 15px;
+      margin-top: 10px;
+      font-size: 12px;
+      font-family: 'Arial Narrow', Arial, sans-serif;
+}
+.posi{
+    margin-left:150px;
+}
+.hidden{
+    display: none;
+}
+.lol{
+    padding-top:10px ;
+}
+.form-switch {
+    padding-left: 2.5em;
+    margin-top: 35px;
+}

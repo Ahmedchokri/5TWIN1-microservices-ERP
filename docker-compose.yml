@@ -1,0 +1,44 @@
+version : "2.2"
+services:
+
+  eureka-service:
+     build: ".\\Eureka"
+     image: eureka
+     ports:
+       - "8761:8761"
+  zuul-gateway:
+     build: ".\\zull"
+     image: zuul-gateway
+     environment:
+       - eureka.client.serviceUrl.defaultZone=http://eureka-service:8761/eureka/
+     ports:
+       - "2222:2222"
+     depends_on:
+       - eureka-service
+  crm-microservice:
+     build: ".\\crmmicroservice"
+     image: crm-microservice
+     environment:
+       - eureka.client.serviceUrl.defaultZone=http://eureka-service:8761/eureka/
+     ports:
+       - "3000:3000"
+     depends_on:
+       - eureka-service
+  Flask-service:
+     build: ".\\FlaskApi"
+     image: flask
+     environment:
+       - EUREKA_SERVICE_URL=http://eureka-service:8761/eureka/
+     ports:
+       - "5000:5000"
+     depends_on:
+       - eureka-service
+  mongo:
+     image: mongo
+     volumes:
+       - ./database:/data
+     ports:
+       - "27017:27017"
+
+
+

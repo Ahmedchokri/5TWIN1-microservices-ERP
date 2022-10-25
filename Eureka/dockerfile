@@ -1,0 +1,4 @@
+From openjdk:8
+Expose 8761
+ADD /target/esprit-1.0.jar esprit.jar
+ENTRYPOINT ["java","-jar","esprit.jar"]
