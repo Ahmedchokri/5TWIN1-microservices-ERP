@@ -1,0 +1,10 @@
+{
+    "/template/*": {
+      "target": "http://localhost:2222",
+      "secure": false,
+      "changeOrigin": true,
+      "logLevel": "debug",
+      "pathRewrite": {"^/template" : "http://localhost:2222/template"}
+    }
+    
+  }

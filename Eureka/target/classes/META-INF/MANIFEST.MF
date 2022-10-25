@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: Eureka
+Implementation-Version: 1.0
+Built-By: achok
+Implementation-Vendor-Id: tn.esprit
+Build-Jdk: 1.8.0_301
+Implementation-URL: https://spring.io/projects/spring-boot/esprit
+Created-By: Maven Integration for Eclipse
+
