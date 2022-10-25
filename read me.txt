@@ -1,8 +1,0 @@
-#on a ajouté un microservice pour la gestion des partenaires et des produits
-avec la relation Partenaire OneToMany Service
-#la création de l'image Docker de mysql : 
-docker pull mysql:5.7
-
-#on a utilisé eureka comme serveur de decouverte 
-
-#cloud gateway comme gateway 

@@ -1,0 +1,11 @@
+tn\esprit\microservice\ProjectApplication.class
+tn\esprit\microservice\repository\ProduitRep.class
+tn\esprit\microservice\Controller\PartenaireController.class
+tn\esprit\microservice\services\IProduitService.class
+tn\esprit\microservice\entities\Produit.class
+tn\esprit\microservice\services\PartenaireServiceImp.class
+tn\esprit\microservice\repository\PartenaireRep.class
+tn\esprit\microservice\Controller\ProduitController.class
+tn\esprit\microservice\entities\Partenaire.class
+tn\esprit\microservice\services\IPartenaireService.class
+tn\esprit\microservice\services\ProduitServiceImp.class
