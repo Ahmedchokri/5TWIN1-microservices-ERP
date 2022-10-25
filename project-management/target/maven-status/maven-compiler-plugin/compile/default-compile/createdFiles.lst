@@ -1,0 +1,9 @@
+com\esprit\microservice\entities\Team.class
+com\esprit\microservice\repositories\TeamRepository.class
+com\esprit\microservice\services\TeamService.class
+com\esprit\microservice\controller\TeamRestController.class
+com\esprit\microservice\entities\Project.class
+com\esprit\microservice\ProjectManagementApplication.class
+com\esprit\microservice\repositories\ProjectRepository.class
+com\esprit\microservice\controller\ProjectRestController.class
+com\esprit\microservice\services\ProjectService.class
