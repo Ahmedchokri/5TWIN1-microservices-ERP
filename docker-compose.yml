@@ -24,6 +24,15 @@ services:
        - "3000:3000"
      depends_on:
        - eureka-service
+  rh-microservice:
+       build: ".\\Ressourceshumaines"
+       image: rh-microservice
+       environment:
+        - eureka.client.serviceUrl.defaultZone=http://eureka-service:8761/eureka/
+       ports:
+        - "3001:3001"
+       depends_on:
+        -eureka-service        
   Flask-service:
      build: ".\\FlaskApi"
      image: flask
