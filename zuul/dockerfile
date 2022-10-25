@@ -1,4 +1,0 @@
-FROM eclipse-temurin:17-jdk-focal
-Expose 8762
-ADD /target/esprit-0.0.1-SNAPSHOT.jar esprit-0.0.1-SNAPSHOT.jar
-ENTRYPOINT ["java","-jar","/esprit-0.0.1-SNAPSHOT.jar"]
