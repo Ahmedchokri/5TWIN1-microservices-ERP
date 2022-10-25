@@ -1,0 +1,4 @@
+FROM openjdk:8-jdk-alpine
+EXPOSE 8080
+ADD /target/project-management-1.0.jar project-management-1.0.jar
+ENTRYPOINT ["java", "-jar", "project-management-1.0.jar"]
